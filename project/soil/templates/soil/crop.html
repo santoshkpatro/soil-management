@@ -1,0 +1,21 @@
+{% extends "soil/base.html" %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/crop.css' %}">
+<div class="container">
+    <h3>Nitrogen</h3>
+    <input class="input-box" type="text" placeholder="Enter the value(example:50)">
+    <h3>Phosphorous</h3>
+    <input class="input-box" type="text" placeholder="Enter the value(example:50)">
+    <h3>pottasium</h3>
+    <input class="input-box" type="text" placeholder="Enter the value(example:50)">
+    <h3>ph level</h3>
+    <input class="input-box" type="text" placeholder="Enter the value">
+    <h3>Rainfall(in mm)</h3>
+    <input class="input-box" type="text" placeholder="Enter the value">
+    <div class="button" >
+        <input type="Submit" class="btn" value="Predict">
+    </div>
+    <div class="button"><input type="button" class="btn" value="Predict"></div>
+</div>
+{% endblock content %}

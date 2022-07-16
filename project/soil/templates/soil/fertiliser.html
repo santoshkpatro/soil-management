@@ -1,0 +1,47 @@
+{% extends "soil/base.html" %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/fertiliser.css' %}">
+<div id="title"><h1>Get infromed advice on fertiliser based on soil</h1></div>
+<hr>
+<br>
+
+<div class="container" align="center">
+<div class="input"></div>
+<div><b><h4>Nitrogen</h4></b></div>
+<div><input type="number" placeholder=" Enter the value "></div><br>
+<div><b><h4>Phosphorous</h4></b></div>
+<div><input type="number" placeholder=" Enter the value "></div><br>
+<div><b><h4>Potassium</h4></b></div>
+<div><input type="number" placeholder=" Enter the value "></div><br>
+<div><b><h3>Crop you want to grow</h3></b></div><br>
+<div><select>
+    <option selected>Select crop</option><br>
+    <option>rice</option>
+    <option>maize</option>
+    <option>chickpea</option>
+    <option>kidneybeans</option>
+    <option>pigeonpeas</option>
+    <option>mothbeans</option>
+    <option>mungbean</option>
+    <option>blackgram</option>
+    <option>lentil</option>
+    <option>pomegranate</option>
+    <option>banana</option>
+    <option>mango</option>
+    <option>grapes</option>
+    <option>watermelon</option>
+    <option>muskmelon</option>
+    <option>apple</option>
+    <option>orange</option>
+    <option>papaya</option>
+    <option>coconut</option>
+    <option>cotton</option>
+    <option>jute</option>
+    <option>coffee</option>
+  </select></div><br>
+  <div><input type="button" value="Predict"></div><br>
+</div>
+</div>
+{% endblock content %}

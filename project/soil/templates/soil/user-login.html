@@ -1,0 +1,17 @@
+{% extends "soil/base.html" %}
+{% block content %}
+    <h2>User Login</h2><br>    
+    <div class="login">
+        <form id="login" method="post" action="login.html">    
+            <label><b>Username</b></label>    
+            <input type="text" name="Uname" id="Uname" placeholder="Username">    
+            <br><br>
+            <label><b>Password</b></label>    
+            <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+            <br><br>    
+            <input type="button" name="log" id="log" value="Sign In">       
+            <br><br> 
+            <a href="{% url 'register' %}">New User? Register Here!</a>    
+        </form>     
+    </div>    
+{% endblock content %}

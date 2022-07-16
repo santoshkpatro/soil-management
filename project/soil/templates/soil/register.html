@@ -1,0 +1,23 @@
+{% extends "soil/base.html" %}
+{% block content %}
+{% load static %}
+{{msg}}www
+
+<div class="container">
+    <form action="/register" method="post">
+        {% csrf_token %}
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="fname" placeholder="First Name">
+    </form>
+</div>
+
+{% endblock content %}

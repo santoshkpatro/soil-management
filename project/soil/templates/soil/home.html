@@ -1,0 +1,89 @@
+{% extends "soil/base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+<div class="bgimg-1">
+    <div class="caption">
+        <span class="border">SOIL MANAGEMENT</span>
+    </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">Introduction</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend nisl in mauris bibendum hendrerit. Sed volutpat ultricies felis in lobortis. Donec aliquet consequat erat, sed finibus diam convallis vitae. Pellentesque id malesuada nulla. Nunc non condimentum nibh. Aliquam velit augue, bibendum non nunc sed, fringilla auctor lorem. Cras bibendum velit accumsan suscipit maximus. Nulla fermentum placerat velit, nec mollis elit luctus ut. In egestas accumsan risus, vel rhoncus sem.</p>
+</div>
+
+<div class="bgimg-2">
+    <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">About Us</span>
+    </div>
+  </div>
+  
+  <div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <p>Proin ac tempor diam. Aliquam ac justo id enim fermentum blandit. Phasellus in lectus tincidunt, aliquet nibh nec, mattis libero. Nullam eros tortor, viverra at volutpat in, tincidunt rutrum purus. Aenean placerat metus a enim placerat rhoncus. Vestibulum tincidunt lobortis sapien eu pellentesque. Nunc pellentesque, ligula tempus dictum sagittis, justo elit hendrerit urna, quis convallis diam risus sit amet nibh. Sed lacinia quis risus sodales molestie. Aliquam sed auctor odio.</p>
+    </div>
+  </div>
+  
+  <div class="bgimg-3">
+    <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Our Services</span>
+    </div>
+  </div>
+  
+  <div style="position:relative;">
+    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <div class="photograph">
+            <div class="eachphoto">
+                <a href="{% url 'crop' %}"><img src="{% static 'images/Crops.jpg' %}" alt="Crops"></a><br>
+                <b>Crops</b>
+            </div>
+            <div class="eachphoto">
+                <a href="{% url 'fertiliser' %}"><img src="{% static 'images/Fertilisers.jpg' %}" alt="Fertiliser"></a><br>
+                <b>Fertilisers</b>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="bgimg-1">
+    <div class="caption">
+    <span class="border">THANKS FOR VISITING</span>
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- <div class="parallax">
+    <div class="text1"><h1><u>SOIL MANAGEMENT</u></h1></div>
+</div>
+<div class="total" style="background-color:black">    
+    <div class="text1"><b><u>Introduction</u></b></div>
+    <div class="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend nisl in mauris bibendum hendrerit. Sed volutpat ultricies felis in lobortis. Donec aliquet consequat erat, sed finibus diam convallis vitae. Pellentesque id malesuada nulla. Nunc non condimentum nibh. Aliquam velit augue, bibendum non nunc sed, fringilla auctor lorem. Cras bibendum velit accumsan suscipit maximus. Nulla fermentum placerat velit, nec mollis elit luctus ut. In egestas accumsan risus, vel rhoncus sem.</div>
+    <div class="text1"><b><u>Effect of Crops</u></b></div>
+    <div class="text1">Mauris posuere purus ac massa pulvinar vehicula. Curabitur nec urna orci. Etiam porta in mi vel pellentesque. Integer venenatis odio a interdum pulvinar. Fusce nec tristique ex. Phasellus urna turpis, pulvinar sit amet augue non, rhoncus efficitur nisi. Duis mattis tempor urna in dapibus. Vivamus vitae lectus eu tellus varius viverra. Curabitur massa augue, pellentesque in orci nec, luctus dapibus tellus. Proin euismod massa ut semper rutrum. Integer at massa ut libero sagittis ultricies. Ut fermentum ornare mi, in tempor augue feugiat ac. Sed ac leo ut nisi laoreet rhoncus sed ut felis. Vivamus eleifend purus rutrum, dictum turpis sit amet, viverra augue. Maecenas ornare tortor pharetra auctor finibus. Pellentesque feugiat ut sem vitae tincidunt.</div>
+    <div class="text1"><b><u>Effect of Fertilisers</u></b></div>
+    <div class="text1">Suspendisse posuere maximus vestibulum. Vivamus leo libero, tempus vitae aliquet vitae, interdum id ante. Vivamus sed nisi molestie, viverra orci et, laoreet nulla. Aliquam nec metus arcu. Donec nisl nulla, laoreet nec imperdiet quis, congue sed felis. Duis sed risus rutrum, condimentum neque porttitor, suscipit libero. Cras non augue et orci aliquam dignissim. Maecenas vel elit dui. Nunc vel lacus convallis tellus semper viverra.</div>
+    <div class="about_us_wrap">
+        <div class="text1"><h2><u>About Us</u></h2></div>
+        <div class="img3"><img src="{% static 'images/About-US.jpg' %}"></div>
+        <div class="text1">Proin ac tempor diam. Aliquam ac justo id enim fermentum blandit. Phasellus in lectus tincidunt, aliquet nibh nec, mattis libero. Nullam eros tortor, viverra at volutpat in, tincidunt rutrum purus. Aenean placerat metus a enim placerat rhoncus. Vestibulum tincidunt lobortis sapien eu pellentesque. Nunc pellentesque, ligula tempus dictum sagittis, justo elit hendrerit urna, quis convallis diam risus sit amet nibh. Sed lacinia quis risus sodales molestie. Aliquam sed auctor odio.</div>
+    </div>
+    
+    <div class="text1"><h2><u>Our Services</u></h2></div>
+    <div class="photograph">
+        <div class="eachphoto">
+            <a href="{% url 'crop' %}"><img src="{% static 'images/Crops.jpg' %}" alt="Crops"></a><br>
+            <b>Crops</b>
+        </div>
+        <div class="eachphoto">
+            <a href="{% url 'fertiliser' %}"><img src="{% static 'images/Fertilisers.jpg' %}" alt="Fertiliser"></a><br>
+            <b>Fertilisers</b>
+        </div>
+    </div>
+</div> -->
+{% endblock content %}
